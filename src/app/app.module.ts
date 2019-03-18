@@ -1,16 +1,29 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+
+import {AppComponent} from './app.component';
+import {TopMenuComponent} from './shared/top-menu/top-menu.component';
+import {SearchComponent} from './shared/search/search.component';
+import {HomeComponent} from './modules/home/pages/home/home.component';
+import {UpcomingMoviesComponent} from './modules/home/pages/upcoming-movies/upcoming-movies.component';
+import {HttpClientModule} from '@angular/common/http';
+import { MovieComponent } from './shared/movie/movie.component';
+import { MovieInfoComponent } from './modules/home/pages/movie-info/movie-info.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopMenuComponent,
+    SearchComponent,
+    HomeComponent,
+    UpcomingMoviesComponent,
+    MovieComponent,
+    MovieInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
