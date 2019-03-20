@@ -7,15 +7,15 @@ import {Component, OnInit} from '@angular/core';
 })
 
 export class SearchComponent implements OnInit {
-  search_result: any;
+  // search_result: any;
 
   constructor() {}
 
   ngOnInit() {
   }
-
-  // search input movies
-  searchMovies() {
-
-  }
+  //
+  // // search input movies
+  // searchMovies() {
+  //
+  // }
 }
