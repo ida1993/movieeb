@@ -9,6 +9,9 @@
   background-color: white;
   border-radius: 1rem;
 
+  &:hover {
+    cursor: pointer;
+  }
 
   .movies-release_date {
     display: flex;
