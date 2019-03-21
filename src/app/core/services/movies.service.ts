@@ -16,6 +16,10 @@ export class MoviesService {
   constructor(private _http: HttpClient) {
   }
 
+  getMovie(id: number) {
+    return this._http.get(this.URLbase + 'movie/' + id + '?api_key=' + this.apiKey);
+  }
+
   getUpcomingMovies() {
     return this._http.get(this.URLbase + this.upcoming + '&api_key=' + this.apiKey);
   }
