@@ -6,14 +6,15 @@ import {RouterModule} from '@angular/router';
 import {HomeComponent} from '../modules/home/pages/home/home.component';
 import {MovieComponent} from './movie/movie.component';
 import { PeopleComponent } from './people/people.component';
+// import { TvShowsComponent } from './tv-shows/tv-shows.component';
 
 @NgModule({
   declarations: [
-    HomeComponent,
     MovieComponent,
     SearchComponent,
     TopMenuComponent,
-    PeopleComponent
+    PeopleComponent,
+    // TvShowsComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +22,6 @@ import { PeopleComponent } from './people/people.component';
   ],
   exports: [
     CommonModule,
-    HomeComponent,
     MovieComponent,
     PeopleComponent,
     SearchComponent,
