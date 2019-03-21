@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {MoviesService} from '../../../../services/movies.service';
+import {MoviesService} from '../../../../core/services/movies.service';
+
 
 @Component({
   selector: 'app-top-rated-tvshows',
