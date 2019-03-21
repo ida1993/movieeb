@@ -1,10 +1,19 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {PopularPeopleComponent} from './pages/popular-people/popular-people.component';
+
+
+const routes: Routes = [
+  {
+    path: 'popular',
+    component: PopularPeopleComponent
+  }
+];
+
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
-  ]
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
 })
-export class PeopleRoutingModule { }
+export class PeopleRoutingModule {
+}
