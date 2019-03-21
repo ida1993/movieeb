@@ -1,10 +1,15 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {SharedModule} from '../../shared/shared.module';
+import {PeopleRoutingModule} from './people-routing.module';
+import {PopularPeopleComponent} from './pages/popular-people/popular-people.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    PopularPeopleComponent
+  ],
   imports: [
-    CommonModule
+    PeopleRoutingModule,
+    SharedModule
   ]
 })
 export class PeopleModule { }
