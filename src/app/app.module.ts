@@ -5,6 +5,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {SharedModule} from './shared/shared.module';
 import {AppRoutingModule} from './app-routing.module';
 import {HomeModule} from './modules/home/home.module';
+import {TvShowsModule} from './modules/tv-shows/tv-shows.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {HomeModule} from './modules/home/home.module';
     AppRoutingModule,
     HomeModule,
     HttpClientModule,
-    SharedModule
+    SharedModule,
+    TvShowsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,11 +1,11 @@
 <header>
     <div style="text-align:center">
-        <img class="logo-img" alt="" src="../../../../../assets/images/logo.png">
+        <img [routerLink]="['']" class="logo-img" alt="" src="../../../../../assets/images/logo.png">
     </div>
 </header>
 <nav class="main-nav">
-    <a> Top rated movies </a>
-    <a> Top rated TV shows </a>
-    <a> Popular people </a>
+    <a [routerLink]="['movies/top-rated']"> Popular movies </a>
+    <a [routerLink]="['tv-shows/top-rated']"> Popular TV shows </a>
+    <a [routerLink]="['people/popular']"> Popular people </a>
 </nav>
 <app-search></app-search>

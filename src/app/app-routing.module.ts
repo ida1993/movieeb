@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import {HomeModule} from './modules/home/home.module';
 import {RouterModule, Routes} from '@angular/router';
+import {TvShowsModule} from './modules/tv-shows/tv-shows.module';
 
 const appRoutes: Routes = [
   {
     path: '',
     loadChildren: () => HomeModule
+  },
+  {
+    path: 'tv-shows',
+    loadChildren: () => TvShowsModule
   }
 ];
 

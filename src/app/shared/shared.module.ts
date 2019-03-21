@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 import {TopMenuComponent} from './top-menu/top-menu.component';
 import {SearchComponent} from './search/search.component';
 import {RouterModule} from '@angular/router';
-import {UpcomingMoviesComponent} from '../modules/home/pages/upcoming-movies/upcoming-movies.component';
 import {HomeComponent} from '../modules/home/pages/home/home.component';
 import {MovieComponent} from './movie/movie.component';
+import { PeopleComponent } from './people/people.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import {MovieComponent} from './movie/movie.component';
     MovieComponent,
     SearchComponent,
     TopMenuComponent,
-    UpcomingMoviesComponent
+    PeopleComponent
   ],
   imports: [
     CommonModule,
@@ -23,9 +23,9 @@ import {MovieComponent} from './movie/movie.component';
     CommonModule,
     HomeComponent,
     MovieComponent,
+    PeopleComponent,
     SearchComponent,
-    TopMenuComponent,
-    UpcomingMoviesComponent
+    TopMenuComponent
   ]
 })
 export class SharedModule { }

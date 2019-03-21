@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {MoviesService} from '../../../../services/movies.service';
 
 @Component({
   selector: 'app-popular-people',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./popular-people.component.scss']
 })
 export class PopularPeopleComponent implements OnInit {
+  @Input() popularPeople: any;
 
-  constructor() { }
+
+  constructor(private movieService: MoviesService) {
+  }
 
   ngOnInit() {
+
+    // Get popular people
+    this.movieService.getPopularPeople().subscribe(data => {
+      this.popularPeople = data['result'];
+      console.log(this.popularPeople);
+    });
   }
 
 }

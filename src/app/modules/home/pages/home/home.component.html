@@ -1,18 +1,5 @@
-<!--<header>-->
-    <!--<div style="text-align:center">-->
-        <!--<img class="logo-img" alt="" src="../../../../../assets/images/logo.png">-->
-    <!--</div>-->
-<!--</header>-->
-<!--<app-top-menu></app-top-menu>-->
-<!--<app-search></app-search>-->
-
-
-
 <div>
-    <app-upcoming-movies></app-upcoming-movies>
-
+    <h1 class="upcoming-movies">Upcoming movies</h1>
+    <app-movie [movie]="movie" *ngFor="let movie of upcomingMovies"></app-movie>
 </div>
 
-
-
-<router-outlet></router-outlet>

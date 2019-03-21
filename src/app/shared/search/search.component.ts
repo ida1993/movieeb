@@ -14,7 +14,7 @@ export class SearchComponent implements OnInit {
   ngOnInit() {
   }
   //
-  // // search input movies
+  // // search input mov ies
   // searchMovies() {
   //
   // }
