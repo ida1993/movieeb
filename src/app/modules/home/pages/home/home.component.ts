@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {MoviesService} from '../../../../services/movies.service';
+import {MoviesService} from '../../../../core/services/movies.service';
 
 @Component({
   selector: 'app-home',
@@ -18,7 +18,6 @@ export class HomeComponent implements OnInit {
     // get upcoming movie
     this.movieService.getUpcomingMovies().subscribe(data => {
       this.upcomingMovies = data['results'];
-      console.log(this.upcomingMovies);
     });
   }
 }
