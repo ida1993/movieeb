@@ -1,23 +1,24 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
 import {TopMenuComponent} from './top-menu/top-menu.component';
 import {SearchComponent} from './search/search.component';
 import {RouterModule} from '@angular/router';
-import {HomeComponent} from '../modules/home/pages/home/home.component';
 import {MovieComponent} from './movie/movie.component';
-import { PeopleComponent } from './people/people.component';
-// import { TvShowsComponent } from './tv-shows/tv-shows.component';
+import {PeopleComponent} from './people/people.component';
+import {FormsModule} from '@angular/forms';
+import {TvShowsComponent} from './tv-shows/tv-shows.component';
 
 @NgModule({
   declarations: [
     MovieComponent,
     SearchComponent,
     TopMenuComponent,
-    PeopleComponent,
-    // TvShowsComponent
+    TvShowsComponent,
+    PeopleComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
     RouterModule
   ],
   exports: [
@@ -25,6 +26,7 @@ import { PeopleComponent } from './people/people.component';
     MovieComponent,
     PeopleComponent,
     SearchComponent,
+    TvShowsComponent,
     TopMenuComponent
   ]
 })
