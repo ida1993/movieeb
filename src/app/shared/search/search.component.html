@@ -1,3 +1,8 @@
 <label class="search">
-<input class="search-bar" type="search" placeholder="Find movies, tv shows and more...">
+    <input class="search-bar" [(ngModel)]="searchString" type="search" placeholder="Find movies, tv shows and more...">
+    <button (click)="search()">Search</button>
 </label>
+<!--<div ng-show="searchString"></div>-->
+<div>
+    <!-- TODO: iterate search results and add link to right view -->
+</div>
