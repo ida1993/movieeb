@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import {Injectable, Input} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
 @Injectable({
@@ -11,7 +11,6 @@ export class MoviesService {
   popularMovies = 'discover/movie?sort_by=popularity.desc';
   popularTvShow = 'tv/popular?';
   popularPeople = 'person/popular?';
-
 
   constructor(private _http: HttpClient) {
   }
@@ -34,5 +33,13 @@ export class MoviesService {
 
   getPopularPeople() {
     return this._http.get(this.URLbase + this.popularPeople + '&api_key=' + this.apiKey);
+  }
+
+  getPeople(id: number) {
+    return this._http.get(this.URLbase + 'person/' + id + '?api_key=' + this.apiKey);
+  }
+
+  search(searchString: string) {
+    return this._http.get(this.URLbase + 'search/multi?query=' + searchString + '&api_key=' + this.apiKey);
   }
 }
