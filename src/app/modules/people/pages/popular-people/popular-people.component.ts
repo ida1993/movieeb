@@ -17,8 +17,8 @@ export class PopularPeopleComponent implements OnInit {
 
     // Get popular people
     this.movieService.getPopularPeople().subscribe(data => {
-      this.popularPeople = data['result'];
-      console.log(this.popularPeople);
+      this.popularPeople = data['results'];
+      console.log(data);
     });
   }
 
