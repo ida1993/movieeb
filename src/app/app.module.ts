@@ -9,6 +9,13 @@ import {TvShowsModule} from './modules/tv-shows/tv-shows.module';
 import {MovieModule} from './modules/movie/movie.module';
 import {PeopleModule} from './modules/people/people.module';
 
+
+import {MatInput} from '@angular/material';
+import {FormControl} from '@angular/forms';
+import {ReactiveFormsModule} from '@angular/forms';
+
+
+
 @NgModule({
   declarations: [
     AppComponent
@@ -21,7 +28,10 @@ import {PeopleModule} from './modules/people/people.module';
     SharedModule,
     TvShowsModule,
     MovieModule,
-    PeopleModule
+    PeopleModule,
+    // MatInput,
+    // FormControl,
+    // ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
