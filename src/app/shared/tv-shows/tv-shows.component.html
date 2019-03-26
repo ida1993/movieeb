@@ -1,3 +1,6 @@
-<p>
-  tv-shows works!
-</p>
+<div class="tv-title" [routerLink]="['/tvShows', tv.id]">
+  {{tv.original_name}}
+  <p> {{tv.overview}}</p>
+  <img alt="" class="tv-posters" src="https://image.tmdb.org/t/p/w500/{{tv.poster_path}}">
+  <p class="tv-release_date"> {{tv.first_air_date | date }}</p>
+</div>
