@@ -1,8 +1,22 @@
-<label class="search">
-    <input class="search-bar" [(ngModel)]="searchString" type="search" placeholder="Find movies, tv shows and more...">
-    <button (click)="search()">Search</button>
-</label>
-<!--<div ng-show="searchString"></div>-->
-<div>
-    <!-- TODO: iterate search results and add link to right view -->
+<div class="search-wrapper">
+    <label class="search">
+        <input (keydown)="keyDown($event)" class="search-bar" [(ngModel)]="searchString" type="search"
+               placeholder="Find movies, tv shows and more...">
+        <button (click)="search()">Search</button>
+    </label>
+    <div class="result-wrapper">
+        <ul *ngIf="searchResult.length" class="search-results">
+            <li *ngFor="let result of searchResult">
+                <span *ngIf="result.media_type === 'movie'">
+                    Movie: {{result.original_title}}
+                </span>
+                <span *ngIf="result.media_type === 'person'">
+                    Person: {{result.name}}
+                </span>
+                <span *ngIf="result.media_type === 'tv'">
+                    Tv-show: {{result.original_name}}
+                </span>
+            </li>
+        </ul>
+    </div>
 </div>
