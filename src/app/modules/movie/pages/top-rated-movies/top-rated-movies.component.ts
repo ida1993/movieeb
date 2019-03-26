@@ -16,7 +16,7 @@ export class TopRatedMoviesComponent implements OnInit {
   // Get popular movies
     this.movieService.getTopRatedMovies().subscribe(data => {
       this.popularMovies = data['results'];
-      console.log(this.popularMovies);
+      // console.log(this.popularMovies);
     });
 
 
