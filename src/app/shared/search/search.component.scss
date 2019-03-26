@@ -1,13 +1,37 @@
-.search-bar {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 10px;
-  width: 30%;
-}
+.search-wrapper {
+  position: relative;
+  margin: auto;
+  width: 40%;
 
-.search {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+
+  .search {
+    display: flex;
+    justify-content: stretch;
+    width: 100%;
+
+    input {
+      justify-content: center;
+      padding: 10px;
+      flex: 5 1 90%;
+    }
+
+    button {
+      flex: 1 0 10%;
+
+    }
+
+
+  }
+
+  .search-results {
+    border: 1px dotted blue;
+    color: red;
+    display: block;
+    list-style: none;
+    max-height: 200px;
+    overflow: hidden;
+    padding: 5px;
+    position: absolute;
+  }
+
 }
