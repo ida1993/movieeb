@@ -1,5 +1,5 @@
 <div class="movies-title" [routerLink]="['/movies', movie.id]">
-    {{movie.title}}
+    <div class="name">{{movie.title}}</div>
     <p> {{movie.overview}}</p>
     <img alt="" class="movie-posters" src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}">
     <p class="movies-release_date"> {{movie.release_date | date }}</p>
