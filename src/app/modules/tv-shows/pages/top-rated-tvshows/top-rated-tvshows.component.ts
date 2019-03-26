@@ -18,7 +18,7 @@ export class TopRatedTvshowsComponent implements OnInit {
     // Get popular TV shows
     this.movieService.getTopRatedTV().subscribe(data => {
       this.popularTvShows = data['results'];
-      console.log(this.popularTvShows);
+      // console.log(this.popularTvShows);
     });
 
   }
