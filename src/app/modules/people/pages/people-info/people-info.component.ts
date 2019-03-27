@@ -17,8 +17,8 @@ export class PeopleInfoComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.people = this.route.snapshot.data.people;
-    // console.log(this.people);
+    this.route.data.subscribe((data) => {
+      this.people = data.people;
+    });
   }
-
 }

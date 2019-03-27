@@ -1,21 +1,26 @@
 <div class="search-wrapper">
     <label class="search">
-        <input (keydown)="keyDown($event)" class="search-bar" [(ngModel)]="searchString" type="search"
+        <input (keydown)="search($event)" class="search-bar" [(ngModel)]="searchString" type="search"
                placeholder="Find movies, tv shows and more...">
-        <button (click)="search()">Search</button>
     </label>
     <div class="result-wrapper">
         <ul *ngIf="searchResult.length" class="search-results">
             <li *ngFor="let result of searchResult">
-                <span *ngIf="result.media_type === 'movie'">
-                    Movie: {{result.original_title}}
-                </span>
-                <span *ngIf="result.media_type === 'person'">
-                    Person: {{result.name}}
-                </span>
-                <span *ngIf="result.media_type === 'tv'">
-                    Tv-show: {{result.original_name}}
-                </span>
+                <a *ngIf="result.media_type === 'movie'" [routerLink]="['movies', result.id]">
+                    <span>
+                        Movie: {{result.original_title}}
+                    </span>
+                </a>
+                <a *ngIf="result.media_type === 'person'" [routerLink]="['people', result.id]">
+                    <span>
+                        Person: {{result.name}}
+                    </span>
+                </a>
+                <a *ngIf="result.media_type === 'tv'" [routerLink]="['tv-shows', result.id]">
+                    <span>
+                        Tv-show: {{result.original_name}}
+                    </span>
+                </a>
             </li>
         </ul>
     </div>

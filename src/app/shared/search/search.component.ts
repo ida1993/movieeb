@@ -12,24 +12,29 @@ export class SearchComponent implements OnInit {
   searchResult: any;
   searchString: string;
 
-
+  /**
+   * @param moviesService
+   */
   constructor(private moviesService: MoviesService) {
     this.searchResult = [];
   }
 
+  /**
+   *
+   */
   ngOnInit() {
   }
 
-  search() {
-    this.moviesService.search(this.searchString).subscribe(data => {
-      this.searchResult = data['results'];
-      console.log(this.searchResult[0]);
-    });
-  }
-
-  keyDown(event) {
+  /**
+   *
+   * @param event
+   */
+  search(event) {
     if (event.key === 'Enter') {
-      this.search();
+      this.moviesService.search(this.searchString).subscribe(data => {
+        this.searchResult = data['results'];
+        console.log(this.searchResult[0]);
+      });
     }
   }
 }
