@@ -28,6 +28,9 @@ export class MoviesService {
   getTopRatedMovies() {
     return this._http.get(this.UrlBase + this.popularMovies + '&api_key=' + this.apiKey);
   }
+  getTv(id: number) {
+    return this._http.get(this.UrlBase + 'tv/' + id + '?api_key=' + this.apiKey);
+  }
 
   getTopRatedTV() {
     return this._http.get(this.UrlBase + this.popularTvShow + '&api_key=' + this.apiKey);
