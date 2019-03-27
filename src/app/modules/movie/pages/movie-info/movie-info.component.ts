@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnChanges, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 
 @Component({
@@ -22,6 +22,8 @@ export class MovieInfoComponent implements OnInit {
    *
    */
   ngOnInit() {
-    this.movie = this.route.snapshot.data.movie;
+    this.route.data.subscribe((data) => {
+      this.movie = data.movie;
+    });
   }
 }
