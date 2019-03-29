@@ -1,25 +1,35 @@
 <div class="search-wrapper">
     <label class="search">
-        <input (keydown)="search($event)" class="search-bar" [(ngModel)]="searchString" type="search"
+        <input (clickOutside)="onClickedOutside($event)" (keyup)="search($event)" class="search-bar" [(ngModel)]="searchString" type="search"
                placeholder="Find movies, tv shows and more...">
     </label>
     <div class="result-wrapper">
-        <ul *ngIf="searchResult.length" class="search-results">
+        <ul *ngIf="searchResult.length" class="search-results" #searchResults>
             <li *ngFor="let result of searchResult">
-                <a *ngIf="result.media_type === 'movie'" [routerLink]="['movies', result.id]">
-                    <span>
-                        Movie: {{result.original_title}}
+                <a *ngIf="result.media_type === 'movie'" (click)="selectResult('movies', result.id)">
+                    <span class="category">
+                        Movie:
+                    </span>
+                    <span class="title">
+                        {{result.original_title}}
                     </span>
                 </a>
-                <a *ngIf="result.media_type === 'person'" [routerLink]="['people', result.id]">
-                    <span>
-                        Person: {{result.name}}
+                <a *ngIf="result.media_type === 'person'" (click)="selectResult('people', result.id)">
+                    <span class="category">
+                        Person:
+                    </span>
+                    <span class="title">
+                        {{result.name}}
                     </span>
                 </a>
-                <a *ngIf="result.media_type === 'tv'" [routerLink]="['tv-shows', result.id]">
-                    <span>
-                        Tv-show: {{result.original_name}}
+                <a *ngIf="result.media_type === 'tv'" (click)="selectResult('tv-shows', result.id)">
+                    <span class="category">
+                        Tv-show:
                     </span>
+                    <span class="title">
+                        {{result.original_name}}
+                    </span>
+
                 </a>
             </li>
         </ul>
