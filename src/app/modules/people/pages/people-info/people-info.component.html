@@ -1,8 +1,9 @@
-<p> {{people.name}}</p>
-<p> {{people.biography}}</p>
-<p> {{people.birthday}}</p>
-<p> {{people.place_of_birth}}</p>
-<p> {{people.known_for_department}}</p>
+<div class="people-title">
+    <p><b> {{people.name}} </b></p>
+    <p> {{people.biography}}</p>
+    <p> <b>Born:</b> {{people.birthday | date}}</p>
+    <p> <b>Born in:</b> {{people.place_of_birth}}</p>
+    <p> <b>Known for:</b> {{people.known_for_department}}</p>
 
-<img alt="" src="{{'https://image.tmdb.org/t/p/w600_and_h900_bestv2'+people.profile_path}}"/>
-
+    <img alt="" class="people-poster" src="{{'https://image.tmdb.org/t/p/w600_and_h900_bestv2'+people.profile_path}}"/>
+</div>
