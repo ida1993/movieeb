@@ -1,6 +1,7 @@
+<div class="tv-title">
+    <p><b> {{tv.original_name}} </b></p>
+    <img alt="" class="tv-posters" src="https://image.tmdb.org/t/p/w500/{{tv.backdrop_path}}">
+    <p> {{tv.overview}}</p>
 
-<p> {{tv.original_name}}</p>
-<img alt="" src="https://image.tmdb.org/t/p/w500/{{tv.backdrop_path}}">
-<p> {{tv.overview}}</p>
-
-<p>Released {{tv.first_air_date | date}}</p>
+    <p class="tv-release_date">Released {{tv.first_air_date | date}}</p>
+</div>
