@@ -7,6 +7,7 @@ import {MovieComponent} from './movie/movie.component';
 import {PeopleComponent} from './people/people.component';
 import {FormsModule} from '@angular/forms';
 import {TvShowsComponent} from './tv-shows/tv-shows.component';
+import {ClickOutsideModule} from 'ng-click-outside';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {TvShowsComponent} from './tv-shows/tv-shows.component';
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    ClickOutsideModule
   ],
   exports: [
     CommonModule,
