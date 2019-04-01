@@ -18,7 +18,7 @@ export class SearchComponent implements OnInit {
   onClickedOutside(e: Event) {
     console.log('Clicked outside', e);
 
-    if (e.target instanceof Node && this.searchResultsElement.nativeElement.contains(e.target)) {
+    if (e.target instanceof Node && this.searchResultsElement && this.searchResultsElement.nativeElement.contains(e.target)) {
       return;
     } else {
       this.searchResult = [];
@@ -52,8 +52,7 @@ export class SearchComponent implements OnInit {
         console.log(this.searchResult[0]);
         });
     }
-    debounceTime(500);
-
+    // debounceTime(500);
     // setTimeout( this.searchResult, 5000);
   }
 
