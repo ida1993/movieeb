@@ -7,6 +7,7 @@
   background-color: white;
   border-radius: 1rem;
 
+
   &:hover {
     cursor: pointer;
   }
@@ -42,3 +43,8 @@
 }
 
 
+.movieInfo-content {
+  @media (width: 320px) {
+    width: 125%;
+  }
+}
