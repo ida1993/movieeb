@@ -8,3 +8,9 @@ h1 {
   width: 20%;
   padding: 20px;
 }
+
+.movie-content {
+  @media (width: 320px) {
+    width: 125%;
+  }
+}
