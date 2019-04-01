@@ -18,5 +18,8 @@ a {
     a:hover {
       text-decoration: none;
   }
+  a.selected:active {
+    background-color: red;
+  }
 }
 
