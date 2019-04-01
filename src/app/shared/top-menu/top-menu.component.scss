@@ -9,17 +9,27 @@
   flex-wrap: wrap;
   padding: 20px;
   margin: 20px;
+  border: 1px dotted lightgrey;
+  background-color: whitesmoke;
+
+
+  @media (width: 320px) {
+    width: 100%;
+  }
 }
 
 
 a {
   text-decoration: none;
   color: #333333;
-    a:hover {
-      text-decoration: none;
+
+  a:hover {
+    text-decoration: none;
   }
-  a.selected:active {
-    background-color: red;
-  }
+
 }
+
+//a:active {
+//  background-color: red;
+//}
 

@@ -4,3 +4,10 @@ h1 {
   width: 25%;
   padding: 20px;
 }
+
+.tvShows-content {
+
+  @media (width: 320px) {
+    width: 125%;
+  }
+}

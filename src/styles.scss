@@ -7,3 +7,15 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
   color: #333333;
 }
+
+
+.content {
+
+  @media(min-width: 320px) {
+    padding: 15px;
+  }
+
+  @media(max-width: 650px) {
+    width: 600px;
+  }
+}

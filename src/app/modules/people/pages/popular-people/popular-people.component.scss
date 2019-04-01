@@ -4,3 +4,13 @@ h1 {
   width: 20%;
   padding: 20px;
 }
+
+
+.people-content {
+
+  @media (width: 320px) {
+    width: 125%;
+  }
+}
+
+
