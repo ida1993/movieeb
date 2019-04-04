@@ -21,15 +21,12 @@
     color: white;;
 
 
-    &:hover {
-      cursor: pointer;
-    }
-
     .movies-release_date {
       display: flex;
       justify-content: space-evenly;
       font-size: 16px;
-      padding: 10px;
+      padding: 10px 60px 10px 10px;
+      margin: auto;
     }
 
     .movie-posters {
@@ -47,12 +44,26 @@
       display: block;
       margin-top: 30px;
     }
+
+    h3{
+      text-align: center;
+    }
+
+    .homepage {
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        cursor: pointer;
+        color: grey;
+      }
+    }
   }
 
   .name {
     margin: auto;
     width: 50%;
-    padding-bottom: 20px;
+    //padding-bottom: 20px;
     font-weight: bold;
 
   }
