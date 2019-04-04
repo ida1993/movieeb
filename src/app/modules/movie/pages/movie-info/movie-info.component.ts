@@ -16,7 +16,8 @@ export class MovieInfoComponent implements OnInit {
   /**
    *
    */
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute) {
+  }
 
   /**
    *
@@ -25,5 +26,13 @@ export class MovieInfoComponent implements OnInit {
     this.route.data.subscribe((data) => {
       this.movie = data.movie;
     });
+  }
+  //
+  // getConfig() {
+  //   return 'https://api.themoviedb.org/3/configuration?api_key=2fc53b39ed65d39d9c857b0d13cf4c65';
+  // }
+
+  getBackgroundImageCss() {
+    return 'url(https://image.tmdb.org/t/p/original' + this.movie.backdrop_path + ')';
   }
 }
