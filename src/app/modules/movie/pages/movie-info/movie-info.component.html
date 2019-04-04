@@ -1,11 +1,21 @@
 <div class="background" [ngStyle]="{'background-image': getBackgroundImageCss()}">
     <div class="movie-info-wrapper">
         <div class="movies-content">
-            <div class="name"><p> {{movie.title}}</p></div>
-            <img alt="" class="movie-posters" src="https://image.tmdb.org/t/p/w500/{{movie.poster_path}}">
+            <div class="name"><h2> {{movie.title}}</h2></div>
+            <h3>{{movie.tagline}}</h3>
+            <img alt="" class="movie-posters" [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path">
             <p> {{movie.overview}}</p>
-
             <p class="movies-release_date">Released {{movie.release_date | date}}</p>
+            <div *ngIf="movie.genres.length <= 0">
+                No genre specified for movie
+            </div>
+            <div *ngIf="movie.genres.length > 0">
+                <p>Genre: </p>
+                <div *ngFor="let genre of movie.genres">{{genre.name}}</div>
+            </div>
+            <p>Movie lasts for: {{movie.runtime}} min</p>
+            <a class="homepage" [href]="movie.homepage"> Visit homepage</a>
+
         </div>
     </div>
 </div>
