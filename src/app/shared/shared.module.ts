@@ -8,6 +8,7 @@ import {PeopleComponent} from './people/people.component';
 import {FormsModule} from '@angular/forms';
 import {TvShowsComponent} from './tv-shows/tv-shows.component';
 import {ClickOutsideModule} from 'ng-click-outside';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {ClickOutsideModule} from 'ng-click-outside';
     SearchComponent,
     TopMenuComponent,
     TvShowsComponent,
-    PeopleComponent
+    PeopleComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -29,7 +31,8 @@ import {ClickOutsideModule} from 'ng-click-outside';
     PeopleComponent,
     SearchComponent,
     TvShowsComponent,
-    TopMenuComponent
+    TopMenuComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }
