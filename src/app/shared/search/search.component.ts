@@ -52,8 +52,6 @@ export class SearchComponent implements OnInit {
         console.log(this.searchResult[0]);
         });
     }
-    // debounceTime(500);
-    // setTimeout( this.searchResult, 5000);
   }
 
   selectResult(category: string, id: number) {
