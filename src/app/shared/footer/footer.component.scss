@@ -1,0 +1,31 @@
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  //margin-top: 20px;
+  border: 1px dotted lightgrey;
+  background-color: #3700B3;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  .made-by {
+    color: white;
+
+
+  }
+
+  .mail {
+    text-decoration: none;
+    color: white;
+  }
+
+  .number {
+    color: white;
+  }
+
+  .fas {
+    color: #03DAC6;
+  }
+}
