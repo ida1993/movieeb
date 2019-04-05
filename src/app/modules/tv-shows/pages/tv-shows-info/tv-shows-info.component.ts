@@ -16,4 +16,8 @@ tv: any;
     });
   }
 
+
+  getBackgroundImage() {
+    return 'url(https://image.tmdb.org/t/p/original' + this.tv.backdrop_path + ')';
+  }
 }
