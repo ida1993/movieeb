@@ -1,14 +1,16 @@
 
 .popular-people {
   justify-content: space-evenly;
-  padding-top: 30px;
-  border: 3px lightgrey solid;
+  font-size: 16px;
+  padding: 30px;
+  border: 3px #018786 solid;
   margin-bottom: 20px;
   margin-left: 40px;
   margin-right: 40px;
   background-color: white;
-  border-radius: 1rem;
-  flex-wrap: wrap;
+  height: 400px;
+  width: 255px;
+  float: left;
 
   &:hover {
     cursor: pointer;
