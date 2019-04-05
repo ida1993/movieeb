@@ -41,6 +41,7 @@
     position: absolute;
     top: 38px;
     width: 388px;
+    z-index: 1;
 
     li {
       a:link,
@@ -59,8 +60,8 @@
 }
 
 .category {
-  color: hotpink;
-
+  color: #03DAC6;
+  //#3700B3
 }
 
 
