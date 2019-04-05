@@ -1,7 +1,20 @@
-<div class="tv-title">
-    <p><b> {{tv.original_name}} </b></p>
-    <img alt="" class="tv-posters" src="https://image.tmdb.org/t/p/w500/{{tv.backdrop_path}}">
-    <p> {{tv.overview}}</p>
+<div class="background" [ngStyle]="{'background-image': getBackgroundImage()}">
+    <div class="tv-info-wrapper">
+        <div class="tv-content">
 
-    <p class="tv-release_date">Released {{tv.first_air_date | date}}</p>
+            <div class="tv-name"><h2>{{tv.original_name}}</h2></div>
+            <img alt="" class="tv-posters" src="https://image.tmdb.org/t/p/w500/{{tv.poster_path}}">
+            <p> {{tv.overview}}</p>
+            <div *ngIf="tv.genres.length > 0">
+                <p>Genre: </p>
+                <div *ngFor="let genre of tv.genres">{{genre.name}}</div>
+            </div>
+            <p>One episode lasts for: {{tv.episode_run_time}} min</p>
+            <p>Number of seasons: {{tv.number_of_seasons}}</p>
+            <p>Number of episodes: {{tv.number_of_episodes}}</p>
+            <p>Last air date: {{tv.last_air_date | date}}</p>
+            <p class="tv-release_date">Release date: {{tv.first_air_date | date}}</p>
+            <a class="homepage" [href]="tv.homepage"> Visit homepage</a>
+        </div>
+    </div>
 </div>
