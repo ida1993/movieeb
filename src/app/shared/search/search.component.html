@@ -1,6 +1,7 @@
 <div class="search-wrapper">
     <label class="search">
-        <input (clickOutside)="onClickedOutside($event)" (keyup)="search($event)" class="search-bar" [(ngModel)]="searchString" type="search"
+        <input (clickOutside)="onClickedOutside($event)" (keyup)="search($event)" class="search-bar"
+               [(ngModel)]="searchString" type="search"
                placeholder="Find movies, tv shows and more...">
     </label>
     <div class="result-wrapper">
