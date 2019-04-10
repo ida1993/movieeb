@@ -1,8 +1,11 @@
 .search-wrapper {
   position: relative;
   margin: auto;
-  width: 400px;
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    max-width: 70%;
+  }
 
   .hidden {
     display: none;
@@ -43,6 +46,11 @@
     width: 388px;
     z-index: 1;
 
+    @media (min-width: 320px) {
+      width: 100%;
+
+    }
+
     li {
       a:link,
       a:visited {
@@ -63,5 +71,6 @@
   color: #03DAC6;
   //#3700B3
 }
+
 
 
