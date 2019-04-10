@@ -1,8 +1,18 @@
+//@media (min-width: 1459px) {
+
+// 320 px
 .upcoming-movies {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  font-weight: normal;
+  text-align: center;
+  font-size: 30px;
+  //display: flex;
+  //align-content: center;
+  //justify-content: center;
+  //font-weight: normal;
 }
 
-
+.movies {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
