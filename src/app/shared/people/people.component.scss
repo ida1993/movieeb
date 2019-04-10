@@ -1,33 +1,33 @@
 
 .popular-people {
-  justify-content: space-evenly;
-  font-size: 16px;
-  padding: 30px;
-  border: 3px #018786 solid;
-  margin-bottom: 20px;
-  margin-left: 40px;
-  margin-right: 40px;
-  background-color: white;
-  height: 400px;
-  width: 255px;
-  float: left;
+  //justify-content: space-evenly;
+  //font-size: 16px;
+  //padding: 30px;
+  //border: 3px #018786 solid;
+  //margin-bottom: 20px;
+  //margin-left: 40px;
+  //margin-right: 40px;
+  //background-color: white;
+  //height: 400px;
+  //width: 255px;
+  //float: left;
 
   &:hover {
     cursor: pointer;
   }
 
   img {
-    height: 350px;
-    display: block;
-    margin: auto;
-    padding: 20px;
+    //height: 350px;
+    //display: block;
+    //margin: auto;
+    padding-bottom: 20px;
   }
 
   p {
     font-size: 20px;
-    margin: auto;
-    width: 20%;
-
+    //margin: auto;
+    //width: 20%;
+    text-align: center;
   }
 }
 
