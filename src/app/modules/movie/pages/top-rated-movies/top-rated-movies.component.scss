@@ -3,14 +3,10 @@ h1 {
   //flex-wrap: wrap;
   //align-content: center;
   //position: relative;
-  font-weight: normal;
-  margin: auto;
-  width: 20%;
+  //font-weight: normal;
+  //margin: auto;
+  //width: 20%;
   padding: 20px;
+  text-align: center;
 }
 
-.movie-content {
-  @media (width: 320px) {
-    width: 125%;
-  }
-}
