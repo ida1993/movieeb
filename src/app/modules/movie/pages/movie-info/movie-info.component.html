@@ -6,12 +6,14 @@
             <img alt="" class="movie-posters" [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path">
             <p> {{movie.overview}}</p>
             <p class="movies-release_date">Released {{movie.release_date | date}}</p>
+            <div class="genre">
             <div *ngIf="movie.genres.length <= 0">
                 No genre specified for movie
             </div>
             <div *ngIf="movie.genres.length > 0">
                 <p>Genre: </p>
                 <div *ngFor="let genre of movie.genres">{{genre.name}}</div>
+            </div>
             </div>
             <p>Movie lasts for: {{movie.runtime}} min</p>
             <a class="homepage" [href]="movie.homepage"> Visit homepage</a>
