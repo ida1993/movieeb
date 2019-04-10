@@ -1,48 +1,78 @@
-.movies-title {
-  //justify-content: space-evenly;
-  font-size: 16px;
-  padding: 30px;
-  border: 3px #018786 solid;
-  margin-bottom: 20px;
-  margin-left: 70px;
-  //margin-right: 40px;
-  background-color: white;
-  height: 400px;
-  width: 255px;
-  float: left;
+@import "variables";
 
-  &:hover {
-    cursor: pointer;
-  }
 
-  .movies-release_date {
-    display: flex;
-    justify-content: space-evenly;
+// 320px
+:host {
+  display: block;
+
+
+  .movies-content {
     font-size: 16px;
-    padding: 10px;
-    font-weight: bold;
-  }
+    background-color: white;
 
-  .movie-posters {
-    height: 300px;
-    display: block;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
 
-  p {
-    margin: auto;
-    width: 50%;
-    padding-bottom: 10px;
+    @media (min-width: $tablet-width ) {
+      padding: 30px;
+      border: 3px #018786 solid;
+      margin-bottom: 20px;
+      margin-left: 70px;
+      height: 470px;
+      width: 255px;
+    }
+
+
+    &:hover {
+      cursor: pointer;
+    }
+
+
+    .name {
+      text-align: center;
+      padding-bottom: 20px;
+      font-size: 20px;
+      font-weight: bold;
+      min-height: 85px;
+
+      @media (min-width: $tablet-width) {
+        //margin: auto;
+        //width: 50%;
+      }
+
+    }
+
+    .movie-posters {
+      width: 100%;
+      //@media (min-width: 768px) {
+      //height: 300px;
+      //display: block;
+      //margin-left: 20px;
+      //margin-right: 20px;
+      //}
+    }
+
+    .movies-release_date {
+      text-align: center;
+      font-size: 20px;
+      padding-bottom: 30px;
+
+      @media (min-width: $tablet-width) {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 16px;
+        padding: 10px;
+        font-weight: bold;
+      }
+
+    }
+
+
+    p {
+
+      @media (min-width: $tablet-width) {
+        margin: auto;
+        width: 50%;
+        padding-bottom: 10px;
+      }
+    }
   }
 }
-
-.name {
-  margin: auto;
-  width: 50%;
-  padding-bottom: 20px;
-  font-weight: bold;
-
-}
-
-
