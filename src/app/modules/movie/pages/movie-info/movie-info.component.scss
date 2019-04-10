@@ -1,69 +1,90 @@
-.background {
-  background-size: cover;
-  width: 100%;
-  height: 550px;
-  background-position: 50% 50%;
-  position: relative;
-  background-repeat: no-repeat;
-}
+// 320px
+
+
+//.background {
+//  background-size: cover;
+//  width: 100%;
+//  height: 550px;
+//  background-position: 50% 50%;
+//  position: relative;
+//  background-repeat: no-repeat;
+//}
 
 .movie-info-wrapper {
-  width: 100%;
-  height: 550px;
+  //width: 100%;
+  //height: 550px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: auto;
   background-image: radial-gradient(circle at 20% 50%, rgba(12.94%, 14.90%, 22.75%, 0.90) 0%, rgba(12.94%, 14.90%, 22.75%, 0.90) 100%);
 
   .movies-content {
-    justify-content: space-evenly;
-    font-size: 16px;
-    padding-top: 30px;
-    margin: 50px 40px 50px 40px;
-    border-radius: 1rem;
     color: white;;
+    padding-top: 30px;
+    //justify-content: space-evenly;
+    //font-size: 16px;
+    //margin: 50px 40px 50px 40px;
+    //border-radius: 1rem;
 
-
-    .movies-release_date {
-      display: flex;
-      justify-content: space-evenly;
-      font-size: 16px;
-      padding: 10px 60px 10px 10px;
-      margin: auto;
-    }
-
-    .movie-posters {
-      height: 340px;
-      display: block;
-      margin-left: 40px;
-      float: left;
-      margin-right: 40px;
-      clear: both;
-    }
 
     .name {
-      margin: auto;
-      width: 50%;
-      //padding-bottom: 20px;
-      font-weight: bold;
-
-    }
-
-    p {
-      margin-left: 140px;
-      overflow: auto;
-      display: block;
-      margin-top: 30px;
+      text-align: center;
+      padding: 10px;
+      //margin: auto;
+      //width: 50%;
+      //font-weight: bold;
     }
 
     h3 {
       text-align: center;
     }
 
+    .movie-posters {
+      //height: 340px;
+      //display: block;
+      //margin-left: 40px;
+      //float: left;
+      //margin-right: 40px;
+      //clear: both;
+    }
+
+    p {
+      //margin-left: 140px;
+      //overflow: auto;
+      //display: block;
+      margin-top: 30px;
+      font-size: 20px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .movies-release_date {
+
+      //display: flex;
+      //justify-content: space-evenly;
+      //font-size: 16px;
+      //padding: 10px 60px 10px 10px;
+      //margin: auto;
+    }
+
+
+    .genre {
+      font-size: 20px;
+      text-align: center;
+    }
+
+
     .homepage {
       text-decoration: none;
       color: white;
+      font-size: 20px;
+      display: block;
+      text-align: center;
+      padding-bottom: 20px;
 
       &:hover {
         cursor: pointer;
-        color: grey;
+        color: gray;
       }
     }
   }
