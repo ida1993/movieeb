@@ -49,18 +49,13 @@ export class SearchComponent implements OnInit {
       console.log(this.searchString);
       this.moviesService.search(this.searchString).subscribe(data => {
         this.searchResult = data['results'];
-        console.log(this.searchResult[0]);
-        });
+      });
     }
   }
 
   selectResult(category: string, id: number) {
     this.searchResult = [];
     this.router.navigate([category + '/' + id]);
-    // [routerLink]="['movies', result.id]"
   }
-
-  // this.search.valueChanges.subscribe(results => console.log(results));
-
 }
 
