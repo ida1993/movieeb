@@ -1,31 +1,41 @@
+@import 'variables';
 
-.footer {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  //margin-top: 20px;
-  border: 1px dotted lightgrey;
-  background-color: #3700B3;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+// 320px
+:host {
+  display: block;
 
-  .made-by {
-    color: white;
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border: 1px dotted lightgrey;
+    background-color: #3700B3;
+    //margin-top: 20px;
+    //position: fixed;
+    //bottom: 0;
+    //width: 100%;
 
+    @media(min-width: $tablet-width) {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
 
-  }
+    .made-by {
+      color: white;
+    }
 
-  .mail {
-    text-decoration: none;
-    color: white;
-  }
+    .mail {
+      text-decoration: none;
+      color: white;
+    }
 
-  .number {
-    color: white;
-  }
+    .number {
+      color: white;
+    }
 
-  .fas {
-    color: #03DAC6;
+    .fas {
+      color: #03DAC6;
+    }
   }
 }
