@@ -1,36 +1,48 @@
+// 320px
+
 .logo-img {
-  width: 200px;
+  width: 230px;
 }
 
 .main-nav {
-  font-size: 1.6rem;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding: 20px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  border: 1px dotted lightgrey;
   background-color: #3700B3;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+  padding: 10px;
+
+  //font-size: 1.6rem;
+  //margin-top: 20px;
+  //border: 1px dotted lightgrey;
+
+  i {
+    margin-right: 10px;
+  }
+
+  .menu-text {
+    display: none;
+
+    @media(min-width: 460px) {
+      display: inline-block;
+    }
+  }
 
   a {
     text-decoration: none;
     color: white;
+    padding: 5px;
 
     a:hover {
       text-decoration: none;
     }
-
   }
 
   .fas {
     color: #03DAC6;
   }
 
-
-  @media (width: 320px) {
-    width: 100%;
-  }
 }
 
 
