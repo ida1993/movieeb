@@ -3,109 +3,100 @@
 .people-content {
   font-size: 20px;
 
+  @media (min-width: $laptopL-width) {
+    font-size: 16px;
+    background-color: white;
+    display: inline-block;
+    position: relative;
+    margin-top: 40px;
+  }
+
+  img {
+
+    @media (min-width: $laptopL-width) {
+      filter: grayscale(100%);
+    }
+  }
+
 
   .people-poster {
     width: 300px;
-    padding: 35px;
+    padding: 30px;
+    display: block;
+    margin: auto;
 
     @media (min-width: $tablet-width) {
       width: 420px;
       display: block;
       margin: 0 auto;
     }
-  }
 
-  .about {
+
+    @media (min-width: $laptopM-width) {
+      margin: 25px;
+      display: inline-block;
+    }
+
     @media (min-width: $laptopL-width) {
-      padding: 25px;
-    }
-  }
-
-  .info {
-    @media (min-width: $laptopL-width) {
-      padding: 25px;
-    }
-  }
-
-  p {
-    padding-left: 35px;
-
-    @media (min-width: $tablet-width) {
-      padding: 25px;
-    }
-  }
-
-}
-
-
-@media (min-width:$laptopL-width) {
-
-  .people-content {
-    font-size: 16px;
-    //margin: 50px 40px 50px 15%;
-    background-color: white;
-    display: inline-block;
-    position: relative;
-    margin-top: 40px;
-    //width: 450px;
-    //overflow: auto;
-
-
-    .people-poster {
+      margin: 0;
       width: 450px;
       float: left;
       height: 550px;
       padding: 0;
-
-      //@media (min-width: $tablet-width) {
-      //  width: 420px;
-      //display: block;
-      //margin-left: auto;
-      //margin-right: auto;
-
     }
   }
 
   .about {
-    //overflow: hidden;
-    //width: 750px;
-    height: 550px;
-    background-color: black;
-
     p {
-      padding-left: 25%;
-      font-size: 20px;
+      padding: 10px;
     }
-  }
 
-  p {
-    width: auto;
-    margin-left: 25px;
-    margin-right: 25px;
-    color: white;
+    @media (min-width: $laptopL-width) {
+      padding: 25px;
+      height: 550px;
+      background-color: black;
+
+      p {
+        padding-left: 25%;
+        font-size: 20px;
+        color: white;
+      }
+    }
   }
 
   .info {
-    display: block;
-    float: left;
-    margin-left: 25%;
-    width: 315px;
-    height: 450px;
-    background-color: #6200EE;
-    position: absolute;
-
     p {
-      padding-top: 25px;
-      color: #03DAC6;
+      padding: 10px;
     }
 
-  }
 
-  img {
-    filter: grayscale(100%);
-  }
+    @media (min-width: $laptopM-width) {
+      float: right;
+      margin: 75px;
 
+      p {
+        text-align: center;
+      }
+    }
+    @media (min-width: $laptopL-width) {
+      margin: 0 0 0 360px;
+      display: block;
+      float: left;
+      width: 315px;
+      height: 450px;
+      background-color: #6200EE;
+      position: absolute;
+      padding: 25px;
+
+      p {
+        padding-top: 25px;
+        color: #03DAC6;
+      }
+    }
+  }
 }
+
+
 
 
 
