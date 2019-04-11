@@ -1,33 +1,46 @@
+@import "variables";
 
-.popular-people {
-  //justify-content: space-evenly;
-  //font-size: 16px;
-  //padding: 30px;
-  //border: 3px #018786 solid;
-  //margin-bottom: 20px;
-  //margin-left: 40px;
-  //margin-right: 40px;
-  //background-color: white;
-  //height: 400px;
-  //width: 255px;
-  //float: left;
+:host {
+  display: block;
 
-  &:hover {
-    cursor: pointer;
+  .popular-people {
+
+    @media (min-width: $tablet-width) {
+      justify-content: space-evenly;
+      font-size: 16px;
+      padding: 30px;
+      border: 3px #018786 solid;
+      margin-bottom: 20px;
+      margin-left: 40px;
+      margin-right: 40px;
+      background-color: white;
+      height: 450px;
+      width: 255px;
+      float: left;
+
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .name {
+      min-height: 50px;
+    }
+
+    img {
+      //height: 350px;
+      //display: block;
+      //margin: auto;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-size: 20px;
+      //margin: auto;
+      //width: 20%;
+      text-align: center;
+    }
   }
 
-  img {
-    //height: 350px;
-    //display: block;
-    //margin: auto;
-    padding-bottom: 20px;
-  }
-
-  p {
-    font-size: 20px;
-    //margin: auto;
-    //width: 20%;
-    text-align: center;
-  }
 }
-
