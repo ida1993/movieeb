@@ -6,10 +6,10 @@
             <img alt="" class="tv-posters" src="https://image.tmdb.org/t/p/w500/{{tv.poster_path}}">
             <p> {{tv.overview}}</p>
             <div class="genre">
-            <div *ngIf="tv.genres.length > 0">
-                <p>Genre: </p>
-                <div *ngFor="let genre of tv.genres">{{genre.name}}</div>
-            </div>
+                <div *ngIf="tv.genres.length > 0">
+                    <p>Genre: </p>
+                    <div *ngFor="let genre of tv.genres">{{genre.name}}</div>
+                </div>
             </div>
             <p>One episode lasts for: {{tv.episode_run_time}} min</p>
             <p>Number of seasons: {{tv.number_of_seasons}}</p>
