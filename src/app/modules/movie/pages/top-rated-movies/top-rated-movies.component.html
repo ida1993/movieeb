@@ -1,4 +1,6 @@
 <div class="movie-content">
-<h1>Popular movies</h1>
-<app-movie [movie]="movie" *ngFor="let movie of popularMovies"></app-movie>
+    <h1>Popular movies</h1>
+    <div class="movies">
+        <app-movie [movie]="movie" *ngFor="let movie of popularMovies"></app-movie>
+    </div>
 </div>
