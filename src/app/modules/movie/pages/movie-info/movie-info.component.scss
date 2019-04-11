@@ -1,5 +1,4 @@
-// 320px
-
+@import "variables";
 
 //.background {
 //  background-size: cover;
@@ -40,6 +39,11 @@
     }
 
     .movie-posters {
+
+      @media (min-width: $tablet-width) {
+        display: block;
+        margin: 0 auto;
+      }
       //height: 340px;
       //display: block;
       //margin-left: 40px;
