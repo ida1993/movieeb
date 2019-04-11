@@ -1,5 +1,7 @@
 <div class="popular-people" [routerLink]="['/people', people.id]">
-    <p>{{people.name}}</p>
+    <div class="name">
+        <p>{{people.name}}</p>
+    </div>
 
     <img alt="" src="{{'https://image.tmdb.org/t/p/w600_and_h900_bestv2'+people.profile_path}}"/>
 </div>
