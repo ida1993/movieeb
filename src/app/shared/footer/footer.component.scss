@@ -1,8 +1,21 @@
 @import 'variables';
 
-// 320px
+$footer-height: 60px;
+$footer-margin: 20px;
+
 :host {
   display: block;
+
+  @media(min-width: $tablet-width) {
+    height: $footer-height + $footer-margin;
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      height: $footer-height;
+      width: 100%;
+    }
+  }
 
   .footer {
     display: flex;
@@ -14,12 +27,6 @@
     //position: fixed;
     //bottom: 0;
     //width: 100%;
-
-    @media(min-width: $tablet-width) {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
 
     .made-by {
       color: white;
