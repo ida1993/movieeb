@@ -1,3 +1,6 @@
+@import "variables";
+
+
 //.background {
 //  background-size: cover;
 //  width: 100%;
@@ -42,6 +45,12 @@
 
 
   .tv-posters {
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
     //height: 340px;
     //display: block;
     //margin-left: 40px;
