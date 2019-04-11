@@ -1,10 +1,16 @@
 h1 {
-  font-weight: normal;
+  font-weight: bold;
   //margin: auto;
   //width: 20%;
   padding: 20px;
   text-align: center;
 }
 
+.people {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 
