@@ -16,8 +16,6 @@ export class SearchComponent implements OnInit {
   searchString: string;
 
   onClickedOutside(e: Event) {
-    console.log('Clicked outside', e);
-
     if (e.target instanceof Node && this.searchResultsElement && this.searchResultsElement.nativeElement.contains(e.target)) {
       return;
     } else {
@@ -46,7 +44,6 @@ export class SearchComponent implements OnInit {
    */
   search(event) {
     if (this.searchString && this.searchString.length > 1) {
-      console.log(this.searchString);
       this.moviesService.search(this.searchString).subscribe(data => {
         this.searchResult = data['results'];
       });
