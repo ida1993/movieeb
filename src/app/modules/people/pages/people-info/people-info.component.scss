@@ -8,7 +8,7 @@
     background-color: white;
     display: inline-block;
     position: relative;
-    margin-top: 40px;
+    margin: 50px;
   }
 
   img {
@@ -55,9 +55,10 @@
       padding: 25px;
       height: 550px;
       background-color: black;
+      overflow: auto;
 
       p {
-        padding-left: 25%;
+        padding-left: 26%;
         font-size: 20px;
         color: white;
       }
