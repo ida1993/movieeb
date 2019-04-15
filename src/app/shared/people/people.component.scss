@@ -26,19 +26,21 @@
 
     .name {
       min-height: 50px;
+      padding-top: 50px;
+
+      @media (min-width: $tablet-width) {
+        padding: 0;
+      }
     }
 
     img {
-      //height: 350px;
-      //display: block;
-      //margin: auto;
+      @media (min-width: $tablet-width) {
       padding-bottom: 20px;
+      }
     }
 
     p {
       font-size: 20px;
-      //margin: auto;
-      //width: 20%;
       text-align: center;
     }
   }
