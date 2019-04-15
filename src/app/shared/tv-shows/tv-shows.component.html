@@ -1,5 +1,7 @@
 <div class="tv-content" [routerLink]="['/tv-shows', tv.id]">
-    <p class="tv-release_date"> {{tv.first_air_date | date }}</p>
-    <div class="name">{{tv.original_name}}</div>
+    <div class="about">
+        <div class="name">{{tv.original_name}}</div>
+        <p class="tv-release_date"> {{tv.first_air_date | date }}</p>
+    </div>
     <img alt="" class="tv-posters" src="https://image.tmdb.org/t/p/w500/{{tv.poster_path}}">
 </div>
