@@ -22,48 +22,57 @@
       cursor: pointer;
     }
 
-
-    .name {
-      text-align: center;
-      font-size: 30px;
-      font-weight: bold;
-      min-height: 25px;
-
-      @media (min-width: $tablet-width) {
-        padding-top: 0;
-        min-height: 85px;
-        font-size: 20px;
+    .about {
+      @media (max-width: $phone-width) {
+        background-color: #3700B3;
+        opacity: 0.6;
+        color: white;
+        padding: 10px;
       }
 
-      @media (min-width: $laptopM-width) {
+      .name {
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        min-height: 25px;
+
+        @media (min-width: $tablet-width) {
+          padding-top: 0;
+          min-height: 85px;
+          font-size: 20px;
+        }
+
+        @media (min-width: $laptopM-width) {
+
+        }
+      }
+
+      .movies-release_date {
+        text-align: center;
+        font-size: 20px;
+        margin: 0;
+
+        @media (min-width: $tablet-width) {
+          display: flex;
+          justify-content: space-evenly;
+          font-size: 16px;
+          padding: 10px;
+          font-weight: bold;
+        }
 
       }
     }
 
     .movie-posters {
       width: 100%;
-    }
-
-    .movies-release_date {
-      padding-top: 100px;
-      text-align: center;
-      font-size: 20px;
-
-      @media (min-width: $tablet-width) {
-        display: flex;
-        justify-content: space-evenly;
-        font-size: 16px;
-        padding: 10px;
-        font-weight: bold;
-      }
-
+      padding-bottom: 50px;
     }
 
 
     p {
       @media (min-width: $tablet-width) {
         margin: auto;
-        width: 50%;
+        //width: 50%;
         padding-bottom: 10px;
       }
     }
