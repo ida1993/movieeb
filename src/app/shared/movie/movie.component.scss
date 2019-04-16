@@ -7,6 +7,8 @@
   .movies-content {
     font-size: 16px;
     background-color: white;
+    padding-top: $radiant-px;
+    position:relative;
 
 
     @media (min-width: $tablet-width) {
@@ -23,11 +25,17 @@
     }
 
     .about {
-      @media (max-width: $phone-width) {
-        background-color: #3700B3;
-        opacity: 0.6;
+      @media (max-width: 767px) {
+        background: rgb(55,0,179);
+        background: linear-gradient(180deg, rgba(55,0,179,.999) $radiant-px, rgba(55,0,179,0) 100%);
+
         color: white;
         padding: 10px;
+        height: 230px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
       }
 
       .name {
@@ -72,7 +80,6 @@
     p {
       @media (min-width: $tablet-width) {
         margin: auto;
-        //width: 50%;
         padding-bottom: 10px;
       }
     }
