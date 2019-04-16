@@ -4,6 +4,10 @@
   display: block;
 
   .popular-people {
+    position: relative;
+    padding-top: $radiant-px;
+
+
 
     @media (min-width: $tablet-width) {
       justify-content: space-evenly;
@@ -24,6 +28,20 @@
       cursor: pointer;
     }
 
+    .about {
+      @media (max-width: 767px) {
+        background: rgb(55,0,179);
+        background: linear-gradient(180deg, rgba(55,0,179,.999) $radiant-px, rgba(55,0,179,0) 100%);
+        color: white;
+        padding: 10px;
+        height: 230px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
+
     .name {
       min-height: 50px;
       padding-top: 50px;
@@ -34,6 +52,11 @@
     }
 
     img {
+
+      @media (max-width: $phone-width) {
+        width: 100%;
+        padding-bottom: 50px;
+      }
       @media (min-width: $tablet-width) {
       padding-bottom: 20px;
       }
