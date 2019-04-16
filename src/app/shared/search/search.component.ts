@@ -2,6 +2,7 @@ import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {MoviesService} from '../../core/services/movies.service';
 import {Router} from '@angular/router';
 import {debounceTime, timeout} from 'rxjs/operators';
+import {logger} from 'codelyzer/util/logger';
 
 
 @Component({
@@ -43,6 +44,10 @@ export class SearchComponent implements OnInit {
    * @param event
    */
   search(event) {
+    if (event.key === 'Escape' || this.searchString.length === 0) {
+      return this.searchResult = [];
+    }
+
     if (this.searchString && this.searchString.length > 1) {
       this.moviesService.search(this.searchString).subscribe(data => {
         this.searchResult = data['results'];
