@@ -7,31 +7,36 @@
     <div class="result-wrapper">
         <ul *ngIf="searchResult.length" class="search-results" #searchResults>
             <li *ngFor="let result of searchResult">
-                <a *ngIf="result.media_type === 'movie'" (click)="selectResult('movies', result.id)">
-                    <span class="category">
-                        Movie:
-                    </span>
-                    <span class="title">
-                        {{result.original_title}}
-                    </span>
-                </a>
-                <a *ngIf="result.media_type === 'person'" (click)="selectResult('people', result.id)">
-                    <span class="category">
-                        Person:
-                    </span>
-                    <span class="title">
-                        {{result.name}}
-                    </span>
-                </a>
-                <a *ngIf="result.media_type === 'tv'" (click)="selectResult('tv-shows', result.id)">
-                    <span class="category">
-                        Tv-show:
-                    </span>
-                    <span class="title">
-                        {{result.original_name}}
-                    </span>
-
-                </a>
+                <div class="item" *ngIf="result.media_type === 'movie'" (click)="selectResult('movies', result.id)">
+                    <a>
+                        <span class="category">
+                            Movie:
+                        </span>
+                        <span class="title">
+                            {{result.original_title}}
+                        </span>
+                    </a>
+                </div>
+                <div class="item" *ngIf="result.media_type === 'person'" (click)="selectResult('people', result.id)">
+                    <a>
+                        <span class="category">
+                            Person:
+                        </span>
+                        <span class="title">
+                            {{result.name}}
+                        </span>
+                    </a>
+                </div>
+                <div class="item" *ngIf="result.media_type === 'tv'" (click)="selectResult('tv-shows', result.id)">
+                    <a>
+                        <span class="category">
+                            Tv-show:
+                        </span>
+                        <span class="title">
+                            {{result.original_name}}
+                        </span>
+                    </a>
+                </div>
             </li>
         </ul>
     </div>
