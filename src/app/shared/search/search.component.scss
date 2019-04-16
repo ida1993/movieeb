@@ -43,9 +43,9 @@
     display: block;
     list-style: none;
     margin: 0;
-    max-height: 200px;
+    max-height: 206px;
     overflow-y: auto;
-    padding: 5px;
+    padding: 0;
     position: absolute;
     top: 38px;
     width: 388px;
@@ -57,25 +57,23 @@
     }
 
     li {
-      a:link,
-      a:visited {
-        text-decoration: none;
-        color: #333333;
+      .item {
+        padding: 10px;
+
+        .category {
+          color: #03DAC6;
+        }
       }
 
-      a:hover,
-      a:active {
-        color: cadetblue;
+      &:hover {
+        background-color: #3700B3;
+        color: #fff;
       }
     }
   }
-
 }
 
-.category {
-  color: #03DAC6;
-  //#3700B3
-}
+
 
 
 
